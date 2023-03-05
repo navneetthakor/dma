@@ -252,6 +252,87 @@ nk{
     color: white;
     /* text-shadow:5px 5px 4px orangered, 10px 2px 4px #342EAD; */
 }
+/* section 2 styling ends  */
 
+/* section 3 styling starts  */
+#sec3{
+    height: 100vh;
+    width: 100vw;
+}
+/* section 3 styling ends here  */
+
+/* section 4 styling starts here  */
+#sec4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(233, 244, 245);
+    border: 2px solid transparent;
+}
+
+#container{
+    background-color: whitesmoke;
+    width: 55vw;
+    height: 85vh;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin:14vh  auto;
+}
+
+#s4d1 {
+    height: 8vh;
+    width: 30vh;
+    margin: auto;
+    padding-top: 1.5vh;
+    font-size: 3vh;
+    margin-bottom: 0vh;
+    color: rgba(255, 68, 0, 0.725);
+    /* border: 2px solid red; */
+}
+
+#s4d2 {
+    /* border: 2px solid grey; */
+    height: 70vh;
+    padding-left: 10vw;
+    padding-top: 2vh;
+}
+
+#s4d2 div{
+    margin: 1vh;
+}
+
+#s4d2 input{
+    width: 80%;
+    padding: 1vh;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#s4d2d1 input{
+    display: inline-block;
+    width: 40%;
+}
+
+textarea{
+    width: 80%;
+    border-radius: 8px;
+    padding: 1vh;
+}
+#s4d2d6 input:first-child{
+    margin-bottom: 1vh;
+    
+}
+
+#s4d2d6 input{
+    color: rgba(255, 68, 0, 0.725);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#s4d2d6 input:hover{
+   color: white;
+   background-color:  rgba(255, 68, 0, 0.725);
+   transition:all 1s ease-out;
+}
 
 /* utility classes  */

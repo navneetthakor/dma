@@ -9,14 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- header of website -->
     <header>
+        <!-- logo division  -->
         <div id="logo">
             <img src="/images/cilogo.png" alt="CI MOGULS">
         </div>
+
+        <!-- navigestion division  -->
         <div id="navigation">
             <nav>
                 <a href="" class="navbar">Home</a>
@@ -29,7 +36,10 @@
             <input type="button" value="Contact Us">
         </div>
     </header>
+
+    <!-- main containing sections  -->
     <main>
+        <!-- section 1 starts here  -->
         <section id="sec1" class="sec_s1margleft">
             <div id="s1d1" class="s1margleft s1margtop">
 
@@ -47,16 +57,67 @@
             </div>
         </section>
 
+        <!-- section 2 starts here -->
         <section id="sec2">
-                <div id="s2d1">
-                    <p>Are you facing <br> the same <nk>challenges?</nk></p>
+            <div id="s2d1">
+                <p>Are you facing <br> the same <nk>challenges?</nk>
+                </p>
+            </div>
+            <div id="s2d2">
+                <div id="d2d1">1</div>
+                <div id="d2d2">2</div>
+                <div id="d2d3">3</div>
+                <div id="d2d4">4</div>
+            </div>
+        </section>
+
+        <!-- section 3 starts here  -->
+        <section id="sec3">
+
+        </section>
+
+        <!-- section 4 startes here  -->
+        <section id="sec4">
+            <div id="container">
+                <div id="s4d1">
+                    <h2>Query Form</h2>
                 </div>
-                <div id="s2d2">
-                    <div id="d2d1">1</div>
-                    <div id="d2d2">2</div>
-                    <div id="d2d3">3</div>
-                    <div id="d2d4">4</div>
+                <div id="s4d2">
+                    <form action="">
+                        <div id="s4d2d1">
+                            Name* : <br>
+                            <input type="text" id="fname" name="fname" required placeholder="First name">
+                            <input type="text" id="lname" name="lname" required placeholder="Last name">
+                        </div>
+                        <div id="s4d2d2">
+                            <label for="cnumber">Contact Number : </label><br>
+                            <input type="number" id="cnumber" name="cnumber" placeholder="+91 6353367637">
+
+                        </div>
+                        <div id="s4d2d3">
+                            <label for="email">Email Id * : </label><br>
+                            <input type="email" name="email" id="email" required placeholder="tnavneet8628@gmail.com">
+                        </div>
+                        <div id="s4d2d4">
+                            <label for="companyinfo"> Please provide a brief information about your company* :
+                            </label><br>
+                            <input type="text" name="companyinfo" id="companyinfo" required
+                                placeholder="we run a hotel named Raj Bhuvan">
+                        </div>
+
+                        <div id="s4d2d5">
+                            <label for="brifquery"> Your query : </label><br>
+                            <textarea name="" id="brifquery" cols="30" rows="10"
+                                placeholder="enter your query"></textarea>
+                        </div>
+
+                        <div id="s4d2d6">
+                            <input type="submit" value="Submit Query">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
                 </div>
+            </div>
         </section>
     </main>
 </body>
