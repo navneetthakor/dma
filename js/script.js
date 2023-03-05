@@ -8,14 +8,16 @@
                 }
                 
                 const source= document.getElementById(id);
+                const target= document.getElementById('s3');
+
                 source.addEventListener('mouseover', function() {
                 // Get the computed style of the hovered element
                 const style = window.getComputedStyle(source);
 
                 // Get the text color value from the computed style
                 const b = style.getPropertyValue('background-color');
-                console.log(b);
-                a[0].style.color=b;
+                target.style.background=b;
+                target.style.color='white';
                 });
                 
             });
