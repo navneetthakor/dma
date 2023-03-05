@@ -9,6 +9,8 @@
 :root{
     --1stcolor : rgba(255, 68, 0, 0.725);
     --2ndcolor : #342EAD;
+    --secheigth1 : 100vh;
+    --secwidth : 100vw;
 }
 
 /* body styling  */
@@ -24,6 +26,8 @@ header::before{
     height: 100%;
     backdrop-filter: blur(5px);
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
     
 }
@@ -33,8 +37,10 @@ header{
     width: 100vw;
     overflow: hidden;
     display: flex;
-    border: 2px solid red;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid red; */
 }
 
 /* logo division of header  */
@@ -88,4 +94,22 @@ header{
     background-color: (--1stcolor);
 }
 
+/* main tag styling  */
+/* section 1 styling  */
+#sec1::before{
+    content: "";
+    background: url("/images/Untitled\ design\ \(5\).png");
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: -1;
+}
+
+#sec1{
+    height: var(--secheigth1);
+    width: var(--secwidth);
+    border: 2px solid red;
+    position: relative;
+}
 
