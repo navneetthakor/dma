@@ -19,7 +19,7 @@
 
 
 input{
-    
+
 }
 
 /* header styling  */
@@ -82,12 +82,16 @@ header{
     font-size: 2.8vh;
     margin-left: 2.5vw;
     color: black;
+    padding: 0.5vw;
 }
 
 #navigation nav a:hover{
     cursor: pointer;
+    color: var(--2ndcolor);
+    transition: all 1s ease-out;
+    background-color: rgb(255, 255, 73);
+    border-radius: 18px;
 }
-
 
 /* login botton design of header  */
 #hbutton{
@@ -173,14 +177,26 @@ header{
 }
 
 #inf-btn{
-    /* background-color: var(--1stcolor); */
     border: 2px solid grey;
-    background-color: white;
-    color: black;
+    padding: 0.8vw;
+    color: white;
+    background-color: var(--1stcolor);
     font-weight: bold;
 }
+#inf-btn:hover{
+    border: 3px solid black;
+    color: white;
+    transform: scale(1.1);
+}
+#brand-btn:hover{
+    border: 3px solid black;
+    color: white;
+    transform: scale(1.1);
+}
+
 #brand-btn{
     background-color: var(--2ndcolor);
+    border: 3px solid black;
     font-weight: bold;
     color: white;
     width: 8vw;
