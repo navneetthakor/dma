@@ -8,6 +8,7 @@
 /* css roots  */
 :root{
     --1stcolor : rgba(255, 68, 0, 0.725);
+    --2ndcolor : #342EAD;
 }
 
 /* body styling  */
@@ -38,9 +39,10 @@ header{
 
 /* logo division of header  */
 #logo{
-    height: 10vh;
-    width: 10vw;
+    height: 7vh;
+    width: 8vw;
     margin-left: 10vw;
+    margin-top: 1vh;
     /* border: 2px solid black; */
 
 }
@@ -51,18 +53,18 @@ header{
 }
 
 /* navigetion bar design of header  */
-#navigestion{
+#navigation{
     height: inherit;
     width: 40vw;
     margin-left: 20vw;
     /* border: 2px solid black; */
 }
 
-#navigestion nav{
+#navigation nav{
     margin-top: 2.5vh;
 }
 
-#navigestion nav a{
+#navigation nav a{
     text-decoration: none;
     font-size: 2.8vh;
     margin-left: 2.5vw;
@@ -70,20 +72,20 @@ header{
 }
 
 /* login botton design of header  */
-#hbotton{
+#hbutton{
     height: inherit;
     width: 10vw;
     /* border: 2px solid black; */
 }
  
-#hbotton input{
+#hbutton input{
     height: 5.5vh;
     width: 8vw;
     margin: 2vh 3vh;
     border: none;
     border-radius: 13px;
     font-size: 2.2vh;
-    background-color: rgba(255, 68, 0, 0.725);
+    background-color: (--1stcolor);
 }
 
 
