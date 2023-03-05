@@ -16,16 +16,10 @@
 }
 
 /* body styling  */
-body{
 
-}
-
-a{
-    cursor: pointer; /*not working*/
-}
 
 input{
-    cursor: pointer;
+    
 }
 
 /* header styling  */
@@ -39,7 +33,6 @@ header::before{
     top: 0;
     left: 0;
     z-index: -1;
-    
 }
 
 header{
@@ -50,15 +43,17 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+    cursor: pointer;
     /* border: 2px solid red; */
 }
 
 /* logo division of header  */
 #logo{
     height: 7vh;
-    width: 8vw;
+    width: 14vw;
     margin-left: 10vw;
     margin-top: 1vh;
+    padding-left: 3vw;
     /* border: 2px solid black; */
 
 }
@@ -72,13 +67,13 @@ header{
 #navigation{
     height: inherit;
     width: 40vw;
-    margin-left: 34vw;
+    margin-left: 25vw;
     /* border: 2px solid black; */
     font-weight: bold;
 }
 
 #navigation nav{
-    margin-top: 2.5vh;
+    margin-top: 2.8vh;
 }
 
 #navigation nav a{
@@ -87,6 +82,11 @@ header{
     margin-left: 2.5vw;
     color: black;
 }
+
+#navigation nav a:hover{
+    cursor: pointer;
+}
+
 
 /* login botton design of header  */
 #hbutton{
@@ -168,10 +168,12 @@ header{
 /*btns*/
 .s1btns{
     border: 10px solid red;
+    cursor: pointer;
 }
 
 #inf-btn{
     /* background-color: var(--1stcolor); */
+    border: 2px solid grey;
     background-color: white;
     color: black;
     font-weight: bold;
