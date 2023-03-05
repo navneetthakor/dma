@@ -116,3 +116,29 @@ header{
     position: relative;
 }
 
+#sec1 div:first-child{
+    margin-top: 20vh;
+}
+
+#s1d2{
+    border: 2px solid red;
+    width: 30vw;
+}
+
+.s1margleft{
+    margin-left: 5vw;
+}
+.s1margtop{
+    margin-top: 5vh;
+}
+
+#s1d1{
+    margin-top: 5vh;
+}
+
+
+/* utility classes  */
+.heading1{
+    
+}
+
