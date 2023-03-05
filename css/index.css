@@ -335,4 +335,144 @@ textarea{
    transition:all 1s ease-out;
 }
 
+/*section -3 css : */
+
+#s3{
+    width: 100vw;
+    height: 75vh;
+    background-color: lightgray;
+    display: flex;
+}
+.textarea{
+    width: 55vw;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.wheel{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    font-weight: bold;
+    float: right;
+    background-color: grey;
+    border: 2px solid white;
+}
+.im, .smm, .cm, .seo, .sac{
+    display: none;
+}
+.chakra{
+    width: 30vw;
+    padding-right: 10vw;
+    margin: auto;
+}
+#sac{
+    position: relative;
+    left: 3px;
+    top: 79px;
+    text-align: center;
+    z-index: 2;
+    transform: rotate(35deg);
+    width: 150px;
+    height: 80px;
+    /* padding-top: 20px; */
+    border-radius: 200px;
+    background-color: grey;
+    border: 2px solid white;
+}
+#sac:hover{
+    background-color: blue;
+    color: white;
+}
+#smm{
+    position: relative;
+    top: -143px;
+    left: 142px;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    transform: rotate(325deg);
+    z-index: 5;
+    border-radius: 200px;
+    background-color: grey;
+    border: 2px solid white;
+}
+#smm:hover{
+    background-color: red;
+    color: white;
+}
+#im{
+    position: relative;
+    top: -82px;
+    text-align: center;
+    border-radius: 200px;
+    left:110px;
+    width: 80px;
+    height: 140px;
+    /* transform: rotate(45deg); */
+    background-color: grey;
+    border: 2px solid white;
+    z-index: 1;
+}
+#im:hover{
+    background-color: purple;
+    color:white;
+}
+#cm{
+    position: relative;
+    top: -157px;
+    text-align: center;
+    width: 80px;
+    border-radius: 200px;
+    height: 140px;
+    /* padding-top: 20px; */
+    left:64px;
+    transform: rotate(38deg);
+    z-index: 3;
+    background-color: grey;
+    border: 2px solid white;
+}
+#cm:hover{
+    background-color: green;
+    color: white;
+}
+#seo{
+    position: relative;
+    top:-272px;
+    border-radius: 200px;
+    left:131px;
+    width: 140px;
+    height: 80px;
+    z-index: 5;
+    text-align: center;
+    transform: rotate(46deg);
+    background-color: grey;
+    border: 2px solid white;
+    
+}
+#seo:hover{
+    background-color: teal;
+    color: white;
+}
+#innerwheel{
+    position: relative;
+    top: -404px;
+    left: 124px;
+    z-index: 7;
+    width: 50px;
+    height:50px;
+    border-radius: 200px;
+    background-color: grey;
+    border: 2px solid white;
+}
+.temp h2{
+    font-size: 2.6rem;
+    margin: 2vh;
+}
+.temp p{
+    margin-bottom: 2vh;
+}
+.p{
+    margin-bottom: 2vh;
+}
+
 /* utility classes  */
