@@ -20,27 +20,15 @@
 
 
 /* header styling  */
-header::before{
-    content: "";
-    background-color: rgba(255, 253, 253, 0.725);
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
 header{
     height: 10vh;
     width: 100vw;
     overflow: hidden;
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(255, 253, 253, 0.725);
+    backdrop-filter: blur(5px);
     /* border: 2px solid red; */
 }
 
@@ -121,7 +109,7 @@ header{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -2;
+    z-index: -5;
 }
 
 #sec1{
@@ -206,7 +194,62 @@ header{
 /* section 1 ends  */
 
 /* section 2 starts  */
+#sec2 {
+    padding-top: 14vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(233, 244, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* main heading of the section 2 */
+#s2d1{
+    height: 20vh;
+    width: 50vw;
+    /* border: 2px solid grey; */
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 2.5vh;
+   margin-bottom: 2vh;
+    font-weight: bolder;
+}
+
+
+/* cads of section 2  */
+#s2d2{
+    height: 60vh;
+    width: 90vw;
+    /* border: 2px solid grey; */
+    display: flex;
+    padding-left: 4vw;
+
+}
+
+#s2d2 div{
+    height: 80%;
+    width: 25%;
+    /* border: 2px solid red; */
+    margin-top: 6vh;
+    margin-left: 0vw;
+    background-color: aquamarine;
+    border-radius: 7px;
+    /* position: absolute; */
+}
+
+#s2d2 div:hover{
+   background-color: whitesmoke;
+   box-shadow: -7px 7px 50px rgb(161, 112, 94),-7px 7px 20px #817ebc, 7px -7px 20px rgb(161, 112, 94), 7px -7px 50px #817ebc;
+   position: relative;
+   z-index: 5;
+}
+
+nk{
+    background-color: var(--1stcolor);
+    border-radius: 15px;
+    /* text-shadow:5px 5px 4px orangered, 10px 2px 4px #342EAD; */
+}
 
 
 /* utility classes  */
