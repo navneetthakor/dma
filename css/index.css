@@ -231,7 +231,7 @@ header{
 #s2d2 div{
     height: 80%;
     width: 25%;
-    /* border: 2px solid red; */
+    border: 1px solid grey;
     margin-top: 6vh;
     margin-left: 0vw;
     background-color: aquamarine;
