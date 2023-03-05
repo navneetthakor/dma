@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: rokkitt;
 }
 
 /* css roots  */
@@ -132,26 +133,22 @@ header{
     margin-top: 20vh;
 }
 
-#s1d2{
-    /* border: 2px solid red; */
-    width: 30vw;
-    font-size: 1.4rem;
-}
-
-.s1margleft{
-    margin-left: 5vw;
-}
-
-.s1margtop{
-    margin-top: 5vh;
-}
-
+/* headline of section 1 */
 #s1d1{
     margin-top: 5vh;
     width: 33vw;
     font-size: 2.7rem;
 }
 
+/* paragraph of section 1 */
+#s1d2{
+    /* border: 2px solid red; */
+    width: 30vw;
+    font-size: 1.4rem;
+}
+
+
+/* section 1 buttons  */
 #s1d3 input{
     /* margin-left: 5vw; */
     padding: 0.6rem;
@@ -172,8 +169,17 @@ header{
     background-color: var(--2ndcolor);
     font-weight: bold;
     color: white;
+    width: 8vw;
 }
+
+/* classes regarding section 1 */
+.s1margleft{
+    margin-left: 5vw;
+}
+
+.s1margtop{
+    margin-top: 5vh;
+}
+
+
 /* utility classes  */
-.heading1{
-    
-}
