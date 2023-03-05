@@ -20,6 +20,10 @@ body{
 
 }
 
+a{
+    cursor: pointer; /*not working*/
+}
+
 input{
     cursor: pointer;
 }
@@ -68,8 +72,9 @@ header{
 #navigation{
     height: inherit;
     width: 40vw;
-    margin-left: 20vw;
+    margin-left: 34vw;
     /* border: 2px solid black; */
+    font-weight: bold;
 }
 
 #navigation nav{
@@ -88,8 +93,8 @@ header{
     height: inherit;
     width: 10vw;
     /* border: 2px solid black; */
-    margin-left: 12vw;
-    margin-right: 2vw;
+    margin-left: 7vw;
+    margin-right: 5vw;
 }
 
 #hbutton input{
@@ -159,6 +164,12 @@ header{
     /* color: white; */
     border-color: white;
 }
+
+/*btns*/
+.s1btns{
+    border: 10px solid red;
+}
+
 #inf-btn{
     /* background-color: var(--1stcolor); */
     background-color: white;
@@ -170,6 +181,7 @@ header{
     font-weight: bold;
     color: white;
     width: 8vw;
+    border: 2px solid red;
 }
 
 /* classes regarding section 1 */
