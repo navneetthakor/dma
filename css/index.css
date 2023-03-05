@@ -70,6 +70,7 @@ header{
     margin-left: 25vw;
     /* border: 2px solid black; */
     font-weight: bold;
+    z-index: 2;
 }
 
 #navigation nav{
