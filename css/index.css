@@ -470,8 +470,67 @@ textarea{
    background-color:  rgba(255, 68, 0, 0.725);
    transition:all 1s ease-out;
 }
+/* section 4 ends  */
 
-/*section -3 css : */
+/* footer stayling starts here  */
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #091337;
+}
+
+/* footer logo styling  */
+#flogo{
+    width: 12vw;
+    height: 10vh;
+    overflow: hidden;
+    padding-top: 4vh;
+    margin-left: 3vw;
+}
+
+#flogo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* styling of all remaining content of footer  */
+#fcontainer{
+    margin-top: 5vh;
+    display: flex;
+    /* color: whitesmoke; */
+}
+
+#fcontainer div{
+    margin-left: 5vw ;
+    color: #a1a5b1;
+}
+#fcontainer div h2{
+    color: whitesmoke;
+}
+
+/* nevigetion section  */
+#fcd1{
+    display: flex;
+    flex-direction: column;
+}
+
+#fcd1 a{
+    text-decoration: none;
+    color: #a1a5b1;
+    font-size: 2.7vh;
+    padding-top: 1vh;
+}
+
+#fcd1 a:hover{
+    color: var(--1stcolor);
+}
+
+/* get in touch section  */
+#fcd2 h3{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2.7vh;
+}
 
 
 /* utility classes  */
