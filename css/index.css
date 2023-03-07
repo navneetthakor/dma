@@ -261,6 +261,8 @@ nk{
     height: 85vh;
     margin: auto;
     background-color: lightgray;
+    background-color: var(--1stcolor);
+    color: white;
     display: flex;
 }
 .textarea{
@@ -275,6 +277,7 @@ nk{
     font-weight: bold;
     float: right;
     background-color: grey;
+    color: black;
     border: 2px solid white;
 }
 .im, .smm, .cm, .seo, .sac{
