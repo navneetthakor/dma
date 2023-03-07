@@ -27,7 +27,7 @@ header{
     display: flex;
     position: fixed;
     z-index: 100;
-    background-color: rgba(255, 253, 253, 0.725);
+    background-color: rgba(255, 253, 253, 0.825);
     backdrop-filter: blur(5px);
     /* border: 2px solid red; */
 }
@@ -128,10 +128,6 @@ header{
 #s1d1{
     margin-top: 5vh;
     width: 33vw;
-    font-size: 2.7rem;
-    /* font-weight: bolder; */
-    /* font-family: Arial, Helvetica, sans-serif; */
-    text-shadow: 7px 7px 5px grey;
 }
 
 /* paragraph of section 1 */
@@ -257,13 +253,20 @@ nk{
 
 /* section 3 styling starts  */
 #sec3{
-    padding-top: 10vh;
+    padding-top: 2vh;
     height: 100vh;
     width: 100vw;
 }
+
+#sec3 > h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5vh;
+}
+
 #s3{
     width: 85vw;
-    height: 75vh;
+    height: 65vh;
     margin: auto;
     background-color: lightgray;
     background-color: var(--1stcolor);
@@ -414,6 +417,9 @@ nk{
     background-color: whitesmoke;
     border-radius: 18px;
 }
+#sec4 > h2{
+padding-top: 1vh;
+}
 .vision,.mission{
     display: flex;
 }
@@ -461,16 +467,10 @@ nk{
     border-bottom-right-radius: 22px;
 }
 
-
-#sec4 h3{
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(248, 149, 11);
-}
 #sec4 h2{
     color: black;
+    /* font-size: 3rem; */
     text-align: center;
-    font-size: 3rem;
     text-decoration: underline;
     margin-bottom: 7vh;
 
@@ -500,10 +500,6 @@ nk{
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
-.faces h2{
-    color: black;
-}
-
 /* section 4 styling ends here */
 
 
@@ -512,11 +508,25 @@ nk{
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: whitesmoke;
 }
 
+#s5txtcontainer{
+    height: 60vh;
+    width: 35vw;
+    padding-left: 3vw;
+}
+#s5txtcontainer h2{
+    text-decoration: underline;
+    padding: 2vh 0vw;
+}
+#s5txtcontainer p{
+    width: 80%;
+    padding: 2vh 0vw;
+    font-size: 1.5rem;
+}
 
 #s5container{
     height: 60vh;
@@ -569,10 +579,9 @@ nk{
     margin-top: 2vh;
 }
 
-#s5d2 h2{
-    padding: 2vh;
+#s5d2 h3{
+    padding: 1vh;
     text-align: center;
-    color: #342EAD;
 }
 
 #s5d2 textarea{
@@ -585,18 +594,20 @@ nk{
 
 #s5d2 input[type=submit]{
    /* margin-left: 4vw; */
-   text-align: center;
+   text-align: center center;
    height: 3vh;
    width: 91%;
    background-color: white;
-   color: rgb(255, 68, 0);
+   color: var(--2ndcolor);
    margin-left: -0.1vw;
+   font-size: 1.3rem;
+   padding-bottom: 3.8vh;
    
 }
 
 #s5d2 input[type=submit]:hover{
    color: white;
-   background-color: rgb(255, 68, 0);
+   background-color: var(--2ndcolor);
 }
 /* section 5 ends  */
 
@@ -662,3 +673,19 @@ footer{
 
 
 /* utility classes  */
+.hprimary{
+    font-size: 2.7rem;
+    text-shadow: 7px 7px 5px grey;
+    font-weight: bolder;
+
+}
+
+.hsecondary{
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+.hternary{
+    font-size: 2rem;
+    color: var(--1stcolor);
+}
