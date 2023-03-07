@@ -199,7 +199,7 @@ header{
     height: 100vh;
     width: 100vw;
     /* background-color: rgb(233, 244, 245); */
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,14 +256,21 @@ nk{
 /* section 2 styling ends  */
 
 /* section 3 styling starts  */
+#sec3{
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100vw;
+}
 #s3{
     width: 85vw;
-    height: 85vh;
+    height: 75vh;
     margin: auto;
     background-color: lightgray;
     background-color: var(--1stcolor);
     color: white;
     display: flex;
+    border-radius: 8px;
+    box-shadow: 7px 7px 40px black;
 }
 .textarea{
     width: 45vw;
@@ -403,76 +410,91 @@ nk{
 #sec4 {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255,255,255);
-    /* background-color: var(--gradient); */
-    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
 }
 
-#container{
-    /* background-color: whitesmoke; */
-    background-color: #342ead39;
-    width: 55vw;
-    height: 85vh;
-    border: 2px solid grey;
-    border-radius: 8px;
-    margin:14vh  auto;
-}
 
-#s4d1 {
-    height: 8vh;
-    width: 30vh;
-    margin: auto;
-    padding-top: 1.5vh;
-    font-size: 3vh;
-    margin-bottom: 0vh;
-    color: rgba(255, 68, 0, 0.725);
+#s4container{
+    height: 60vh;
+    width: 60vw;
     /* border: 2px solid red; */
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgba(255, 228, 196, 0.332);
+    box-shadow: 7px -7px 40px black;
 }
 
-#s4d2 {
-    /* border: 2px solid grey; */
-    height: 70vh;
-    padding-left: 10vw;
-    padding-top: 2vh;
+#s4d1{
+    margin-top: 7vh;
+    width: 50%;
+    height: 75%;
+    overflow: hidden;
 }
 
-#s4d2 div{
-    margin: 1vh;
+#s4d1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#s4d2{
+    margin-top: 6vh;
+    margin-left: 2vw;
+    height: 81%;
+    width: 40%;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.141);
 }
 
 #s4d2 input{
-    width: 80%;
-    padding: 1vh;
-    border: 1px solid grey;
-    border-radius: 8px;
-    background-color: white;
+    height: 3vh;
+    padding: 2vh 1vh;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
 }
 
-#s4d2d1 input{
-    display: inline-block;
-    width: 40%;
-}
-
-textarea{
-    width: 80%;
-    border-radius: 8px;
-    padding: 1vh;
-}
-#s4d2d6 input:first-child{
-    margin-bottom: 1vh;
+#s4d2d3 input{
+    width: 91%;
     
 }
 
-#s4d2d6 input{
-    color: rgba(255, 68, 0, 0.725);
-    font-weight: bold;
-    cursor: pointer;
+#s4d2 div{
+    margin-left: 2vw;
+    margin-top: 2vh;
 }
 
-#s4d2d6 input:hover{
+#s4d2 h2{
+    padding: 2vh;
+    text-align: center;
+    color: #342EAD;
+}
+
+#s4d2 textarea{
+    height: 12vh;
+    width: 91%;
+    border: none;
+    /* text-align: right; */
+    padding: 1vh;
+}
+
+#s4d2 input[type=submit]{
+   margin-left: 4vw;
+   text-align: center;
+   height: 3vh;
+   width: 91%;
+   background-color: white;
+   color: rgb(255, 68, 0);
+   margin-left: -0.1vw;
+}
+
+#s4d2 input[type=submit]:hover{
    color: white;
-   background-color:  rgba(255, 68, 0, 0.725);
-   transition:all 1s ease-out;
+   background-color: rgb(255, 68, 0);
 }
 /* section 4 ends  */
 
