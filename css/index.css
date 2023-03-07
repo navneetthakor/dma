@@ -226,18 +226,21 @@ header{
 }
 
 #s2d2 div{
+    text-align: center;
     height: 80%;
     width: 25%;
     border: 1px solid grey;
     margin-top: 6vh;
     margin-left: 0vw;
-    background-color: var(--2ndcolor);
+    background-color:var(--2ndcolor);
     border-radius: 7px;
+    color: whitesmoke;
     /* position: absolute; */
 }
 
 #s2d2 div:hover{
    background-color: whitesmoke;
+   color: var(--2ndcolor);
    box-shadow: -7px 7px 50px rgb(161, 112, 94),-7px 7px 20px #817ebc, 7px -7px 20px rgb(161, 112, 94), 7px -7px 50px #817ebc;
    position: relative;
    z-index: 5;
