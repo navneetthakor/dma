@@ -397,6 +397,7 @@ nk{
 .temp h2{
     font-size: 2.6rem;
     margin: 2vh;
+    text-decoration: underline;
 }
 .temp p{
     margin-bottom: 2vh;
@@ -406,8 +407,108 @@ nk{
 }
 /* section 3 styling ends here  */
 
-/* section 4 styling starts here  */
-#sec4 {
+/* section 4 styling starts */
+#sec4{
+    width: 80vw;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 18px;
+}
+.vision,.mission{
+    display: flex;
+}
+.vision{
+    margin-bottom: 10vh;
+}
+.vision img{
+    width: 500px;
+    height: 350px;
+    float: left;
+    margin-left: 50px;
+    border: 4px solid black;
+}
+.mission img{
+    border: 4px solid black;
+    width: 450px;
+    height: 325px;
+    float: right;
+    margin-right: 50px;
+}
+#imgvis,#imgmiss{
+    width: 70vw;
+    margin: auto;
+    /* background-color: lightblue; */
+}
+#viscont,#misscont{
+    width: 60vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#viscont{
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+#misscont{
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+
+#sec4 h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(248, 149, 11);
+}
+#sec4 h2{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: 7vh;
+
+}
+.pic1,.pic2{
+    height: 250px;
+    margin-right: 20px;
+    width: 200px;
+    /* background-color: lightblue; */
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;font-weight: bold;
+    margin-bottom: 200px;
+    text-align: center;
+}
+.photos a{
+    text-decoration: none;
+    color: black;
+}
+.photos span:hover{
+    transform: scale(2);
+    text-decoration: underline;
+}
+.faces{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.faces h2{
+    color: black;
+}
+
+/* section 4 styling ends here */
+
+
+/* section 5 styling starts here  */
+#sec5 {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -417,7 +518,7 @@ nk{
 }
 
 
-#s4container{
+#s5container{
     height: 60vh;
     width: 60vw;
     /* border: 2px solid red; */
@@ -428,19 +529,19 @@ nk{
     box-shadow: 7px -7px 40px black;
 }
 
-#s4d1{
+#s5d1{
     margin-top: 7vh;
     width: 50%;
     height: 75%;
     overflow: hidden;
 }
 
-#s4d1 img{
+#s5d1 img{
     width: 100%;
     height: 100%;
 }
 
-#s4d2{
+#s5d2{
     margin-top: 6vh;
     margin-left: 2vw;
     height: 81%;
@@ -450,7 +551,7 @@ nk{
     background-color: rgba(128, 128, 128, 0.141);
 }
 
-#s4d2 input{
+#s5d2 input{
     height: 3vh;
     padding: 2vh 1vh;
     width: 45%;
@@ -458,23 +559,23 @@ nk{
     border-radius: 5px;
 }
 
-#s4d2d3 input{
+#s5d2d3 input{
     width: 91%;
     
 }
 
-#s4d2 div{
+#s5d2 div{
     margin-left: 2vw;
     margin-top: 2vh;
 }
 
-#s4d2 h2{
+#s5d2 h2{
     padding: 2vh;
     text-align: center;
     color: #342EAD;
 }
 
-#s4d2 textarea{
+#s5d2 textarea{
     height: 12vh;
     width: 91%;
     border: none;
@@ -482,21 +583,22 @@ nk{
     padding: 1vh;
 }
 
-#s4d2 input[type=submit]{
-   margin-left: 4vw;
+#s5d2 input[type=submit]{
+   /* margin-left: 4vw; */
    text-align: center;
    height: 3vh;
    width: 91%;
    background-color: white;
    color: rgb(255, 68, 0);
    margin-left: -0.1vw;
+   
 }
 
-#s4d2 input[type=submit]:hover{
+#s5d2 input[type=submit]:hover{
    color: white;
    background-color: rgb(255, 68, 0);
 }
-/* section 4 ends  */
+/* section 5 ends  */
 
 /* footer styling starts here  */
 footer{
