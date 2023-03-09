@@ -22,3 +22,8 @@
                 
             });
         });
+
+         function focuscontc(){
+            fname = document.getElementById("fname");
+            fname.focus();
+        }
