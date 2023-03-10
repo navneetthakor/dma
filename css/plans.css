@@ -190,12 +190,49 @@ header{
 }
 
 
-
 /* section 2 styling starts here  */
 #sec2{
     height: var(--secheigth1);
     width: var(--secwidth);
 }
+
+.planheading{
+    margin-bottom: 7vh;
+}
+
+.cmp_plans h2{
+    font-weight: lighter;
+
+}
+
+.cmp_plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+td, th{
+    width: 200px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 10px;
+}
+
+.names{
+    font-weight: bold;
+}
+
+.note{
+    color: grey;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+/* section 2 styling ends here */
 
 /* footer styling starts here  */
 footer{
