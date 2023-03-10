@@ -1,0 +1,276 @@
+/* css reset  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: rokkitt;
+}
+
+/* css roots  */
+:root{
+    --1stcolor : rgba(255, 68, 0, 0.725);
+    --2ndcolor : #342EAD;
+    --secheigth1 : 100vh;
+    --secwidth : 100vw;
+    --gradient : linear-gradient(to right,var(--1stcolor),var(--2ndcolor));
+}
+
+/* body styling  */
+
+
+
+/* header styling  */
+header{
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(255, 253, 253, 0.825);
+    backdrop-filter: blur(5px);
+    /* border: 2px solid red; */
+}
+
+/* logo division of header  */
+#logo{
+    height: 7vh;
+    width: 14vw;
+    margin-left: 10vw;
+    margin-top: 1vh;
+    padding-left: 3vw;
+    /* border: 2px solid black; */
+
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+
+/* navigetion bar design of header  */
+#navigation{
+    height: inherit;
+    width: 40vw;
+    margin-left: 25vw;
+    /* border: 2px solid black; */
+    font-weight: bold;
+    z-index: 2;
+}
+
+#navigation nav{
+    margin-top: 2.8vh;
+}
+
+#navigation nav a{
+    text-decoration: none;
+    font-size: 2.8vh;
+    margin-left: 2vw;
+    color: black;
+    padding: 0.5vw;
+}
+
+#navigation nav a:hover{
+    cursor: pointer;
+    color: var(--2ndcolor);
+    transition: all 1s ease-out;
+    background-color: var(--1stcolor);
+    border-radius: 18px;
+}
+
+/* login botton design of header  */
+#hbutton{
+    height: inherit;
+    width: 10vw;
+    margin-left: 7vw;
+    margin-right: 5vw;
+}
+
+#hbutton input{
+    cursor: pointer;
+    height: 5.5vh;
+    width: 8vw;
+    margin: 2vh 3vh;
+    border: none;
+    border-radius: 13px;
+    font-size: 2.2vh;
+    background-color: var(--2ndcolor);
+    color: white;
+    font-weight: bold;
+}
+
+/* main tag styling  starts */
+
+/* section 1 styling starts here  */
+#sec1{
+    height: var(--secheigth1);
+    width: var(--secwidth);
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* content below heading  */
+#s1div2{
+    margin-top: 2vh;
+    height: 15vh;
+    width: 50vw;
+    font-size: 3vh;
+    text-align: center;
+}
+
+/* cards styling */
+#s1div3{
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#s1div3 > div{
+    height: 100%;
+    width: 30%;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* card heading styling  */
+.s1cardh{ 
+    height: 20%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 4vh;
+    border-bottom: 2px solid grey;
+    background-color: rgba(128, 128, 128, 0.154);
+} 
+
+/* card body styling  */
+.s1cardb{ 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.s1cardb h3{ 
+    font-size: 5vh;
+    padding: 4vh;
+
+}
+
+.s1cardb h4{ 
+    font-size: 3vh;
+    font-weight: 400;
+} 
+
+.s1cardb input{ 
+    height: 15%;
+    width: 80%;
+   margin-top: 10%;
+   border-radius: 8px;
+   border-color: blue;
+   font-size: 3vh;
+   background-color: white;
+} 
+
+
+/* specific card styling  */
+#s1d3d2d2 input{
+    background-color: blue;
+    color: white;
+}
+
+#s1d3d3d2 input, #s1d3d3d1{
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* section 2 styling starts here  */
+#sec2{
+    height: var(--secheigth1);
+    width: var(--secwidth);
+}
+
+/* footer styling starts here  */
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #091337;
+}
+
+/* footer logo styling  */
+#flogo{
+    width: 12vw;
+    height: 10vh;
+    overflow: hidden;
+    padding-top: 4vh;
+    margin-left: 3vw;
+}
+
+#flogo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* styling of all remaining content of footer  */
+#fcontainer{
+    margin-top: 5vh;
+    display: flex;
+    /* color: whitesmoke; */
+}
+
+#fcontainer div{
+    margin-left: 5vw ;
+    color: #a1a5b1;
+}
+#fcontainer div h2{
+    color: whitesmoke;
+}
+
+/* nevigation section  */
+#fcd1{
+    display: flex;
+    flex-direction: column;
+}
+
+#fcd1 a{
+    text-decoration: none;
+    color: #a1a5b1;
+    font-size: 2.7vh;
+    padding-top: 1vh;
+}
+
+#fcd1 a:hover{
+    color: var(--1stcolor);
+}
+
+/* get in touch section  */
+#fcd2 h3{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2.7vh;
+}
+/* footer styaling ends here  */
+
+/* utility classes  */
+.hprimary{
+    font-size: 2.7rem;
+    text-shadow: 7px 7px 5px grey;
+    font-weight: bolder;
+}
+
+.hsecondary{
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+.hternary{
+    font-size: 2rem;
+    color: var(--1stcolor);
+}
