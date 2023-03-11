@@ -26,15 +26,40 @@
         });
 
         // script for contact us page 
-
+        let mess = 0
        function bfocus(){
-        b = getElementById('brand')
-        b.background='whitesmoke';
-            b.color='orengred';
+        if(mess == 0){
+            mess = 1;
+        b = document.getElementById('brand');
+        b.style.color='orangered';
+        b.style.background='whitesmoke';
+        yt = document.getElementById('Web/App');
+            yt.placeholder = "Web/App link";
+        }
+        else{
+            c = document.getElementById('creator');
+        c.style.background='rgb(214, 214, 214)';
+            c.style.color='black';
+            mess = 0;
+            bfocus();
+        }
        }
 
        function cfocus(){
-        c = getElementById('creator');
-        c.background='whitesmoke';
-            c.color='orengred';
+        if(mess == 0){
+            mess = 1;
+        c = document.getElementById('creator');
+        c.style.background='whitesmoke';
+            c.style.color='orangered';
+
+            yt = document.getElementById('Web/App');
+            yt.placeholder = "channel/account link";
+        }
+        else{
+            b = document.getElementById('brand');
+            b.style.color='black';
+            b.style.background='rgb(214, 214, 214)';
+            mess = 0;
+            cfocus();
+        }
        }
