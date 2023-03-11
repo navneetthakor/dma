@@ -35,6 +35,8 @@
         b.style.background='whitesmoke';
         yt = document.getElementById('Web/App');
             yt.placeholder = "Web/App link";
+        breg = document.getElementById('book-reg');
+            breg.value = "Book Appointment";
         }
         else{
             c = document.getElementById('creator');
@@ -54,6 +56,9 @@
 
             yt = document.getElementById('Web/App');
             yt.placeholder = "channel/account link";
+
+            breg = document.getElementById('book-reg');
+            breg.value = "Register";
         }
         else{
             b = document.getElementById('brand');
