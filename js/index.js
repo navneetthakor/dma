@@ -1,3 +1,5 @@
+        
+        // script for home page 
         const fid=document.querySelectorAll('p');
         fid.forEach(p=>{
             p.addEventListener('mouseover', function(changeContent){
@@ -23,7 +25,16 @@
             });
         });
 
-         function focuscontc(){
-            fname = document.getElementById("fname");
-            fname.focus();
-        }
+        // script for contact us page 
+
+       function bfocus(){
+        b = getElementById('brand')
+        b.background='whitesmoke';
+            b.color='orengred';
+       }
+
+       function cfocus(){
+        c = getElementById('creator');
+        c.background='whitesmoke';
+            c.color='orengred';
+       }

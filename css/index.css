@@ -540,7 +540,6 @@ padding-top: 1vh;
 #s5container{
     height: 60vh;
     width: 60vw;
-    /* border: 2px solid red; */
     overflow: hidden;
     border-radius: 8px;
     display: flex;
