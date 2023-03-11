@@ -1,0 +1,31 @@
+/* section 1 styling  */
+#sec1{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 12vh;
+    display: flex;
+}
+
+#sec1 > div{
+    width: 50%;
+    height: 100%;
+}
+
+/* image division styling  */
+#s1div2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} 
+
+/* text division styling  */
+#s1div1 h1{
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid red;
+}
+
+/* form division styling  */
+#s1form{
+    position: absolute;
+}
