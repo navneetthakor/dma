@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rokkitt:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <div class="logincenter" id="lc">
+        <div class="login">
+            <span><a href="" onclick="history.back()">&#10539;</a></span>
+            <div class="intro">
+                <p>&#9735;</p>
+                <p id="welcome">Welcome!</p>
+                <p>Sign in to your account</p>
+            </div>
+            <div class="logindetails">
+                <div class="names"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="pass">Password &nbsp;&nbsp;
+                    <input type="password" name="pswd" id="password">
+                </div>
+                <input type="button" value="Login &#8680;" onclick="checkuser()">
+                <div class="signuptext">
+                    <p onclick="popsignuppage()">First time? Signup now!!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="signupcenter" id="sc">
+        <div class="signup" id="signup">
+            <span><a href="" onclick="history.back()">&#10539;</a></span>
+            <div class="intro">
+                <p>&#9735;</p>
+                <p id="welcome">Create Account</p>
+                <p>Shake a firm hand with us</p>
+            </div>
+            <div class="logindetails">
+                <div class="names"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="username" id="signup_usrnme">
+                </div>
+                <div class="email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="pass">Password &nbsp;&nbsp;
+                    <input type="password" name="pswd" id="signup_pwd">
+                </div>
+                <input type="button" value="Create &#8680;" onclick="adduser()">
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
