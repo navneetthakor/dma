@@ -139,7 +139,6 @@ header{
 
 /* section 1 buttons  */
 #s1d3 input{
-    padding: 0.6rem;
     margin-right: 5vw;
     border-radius: 13px;
     font-size: 1.1rem;
@@ -154,20 +153,15 @@ header{
 
 #inf-btn{
     border: 2px solid grey;
-    padding: 0.8vw;
+    padding: 2vh 2vw;
     color: white;
     background-color: var(--1stcolor);
     font-weight: bold;
 }
 #inf-btn:hover{
-    border: 3px solid black;
-    color: white;
-    transform: scale(1.1);
-}
-#brand-btn:hover{
-    border: 3px solid black;
-    color: white;
-    transform: scale(1.1);
+    border: 3px solid grey;
+    color: var(--1stcolor);
+    background-color: white;
 }
 
 #brand-btn{
@@ -177,7 +171,15 @@ header{
     color: white;
     width: 8vw;
     border: 2px solid red;
+    padding: 2vh 2vw;
 }
+
+#brand-btn:hover{
+    border: 3px solid grey;
+    color: var(--2ndcolor);
+    background-color: white;
+}
+
 
 /* classes regarding section 1 */
 .s1margleft{
