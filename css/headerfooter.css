@@ -162,7 +162,7 @@ footer{
 /* utility classes  */
 .hprimary{
     font-size: 2.7rem;
-    text-shadow: 7px 7px 5px grey;
+    /* text-shadow: 7px 7px 5px grey; */
     font-weight: bolder;
 
 }
