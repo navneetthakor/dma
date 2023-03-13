@@ -157,6 +157,16 @@ footer{
     font-size: 2.7vh;
 }
 
+#fcd3 h2{
+    text-align: center;
+}
+
+/* map css */
+.maps iframe{
+    margin-top: 15px;
+    margin-left: -5vw;
+}
+
 /* footer css ends */
 
 /* utility classes  */
