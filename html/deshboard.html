@@ -64,7 +64,7 @@
             /* border: none; */
         }
 
-        #leftd2 input[type=button]:first-child {
+        .corang {
             color: orangered;
         }
 
@@ -74,7 +74,6 @@
         }
 
         #rcontainer {
-            /* border: 2px solid red; */
             width: 80%;
             height: 80%;
             margin-top: 7%;
@@ -87,7 +86,9 @@
             height: 48%;
             width: 100%;
             background-color: blueviolet;
+            /* background-color: whitesmoke; */
             color: white;
+            /* color: black; */
             border-radius: 8px;
             text-align: center;
             font-size: 2vh;
@@ -129,9 +130,9 @@
                 <h3 id="clientname">Navneet kumar</h3>
             </div>
             <div id="leftd2">
-                <input type="button" value="Deshboard">
-                <input type="button" value="Plans">
-                <input type="button" value="Logout">
+                <input type="button" value="Deshboard"  id="ldesh" class=" lbtn corang" onclick="desh()">
+                <input type="button" value="Plans" id="lplans" class="lbtn" onclick="plans()" >
+                <input type="button" value="Logout" id="llogin" class="lbtn" onclick="logout()">
             </div>
         </div>
         <div id="right">
@@ -151,6 +152,50 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function plans()
+        {
+           lall = document.getElementsByClassName('lbtn'); 
+            lall = Array.from(lall);
+
+            lall.forEach(element => {
+                element.classList.remove('corang')
+            });
+            lall = document.getElementsByClassName('lbtn')[1].classList.add('corang'); 
+           
+           var rcontainer = document.getElementById('rcontainer');
+           rcontainer.style.display="none";  
+
+           window.open("/html/plans.html","_blank");
+        }
+
+        function desh()
+        {
+            lall = document.getElementsByClassName('lbtn'); 
+            lall = Array.from(lall);
+
+            lall.forEach(element => {
+                element.classList.remove('corang')
+            });
+            lall = document.getElementsByClassName('lbtn')[0].classList.add('corang'); 
+
+           var rcontainer = document.getElementById('rcontainer');
+           rcontainer.style.display="block"; 
+        }
+
+        function logout()
+        {
+            lall = document.getElementsByClassName('lbtn'); 
+            lall = Array.from(lall);
+
+            lall.forEach(element => {
+                element.classList.remove('corang')
+            });
+            lall = document.getElementsByClassName('lbtn')[2].classList.add('corang');
+           window.open("/html/index.html","_self");  
+        }
+    </script>
 </body>
 
 </html>
