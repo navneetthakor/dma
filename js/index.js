@@ -21,52 +21,53 @@
         });
 
         // script for contact us page 
-    //     let mess = 0
-    //    function bfocus(){
-    //     if(mess == 0){
-    //         mess = 1;
-    //     b = document.getElementById('brand');
-    //     b.style.color='orangered';
-    //     b.style.background='whitesmoke';
-    //     yt = document.getElementById('Web/App');
-    //         yt.placeholder = "Web/App link";
-    //     breg = document.getElementById('book-reg');
-    //         breg.value = "Book Appointment";
-    //     }
-    //     else{
-    //         c = document.getElementById('creator');
-    //     c.style.background='rgb(214, 214, 214)';
-    //         c.style.color='black';
-    //         mess = 0;
-    //         bfocus();
-    //     }
-    //    }
+        let mess = 0
+       function bfocus(){
+        if(mess == 0){
+            mess = 1;
+        b = document.getElementById('brand');
+        b.style.color='orangered';
+        b.style.background='whitesmoke';
+        yt = document.getElementById('Web/App');
+            yt.placeholder = "Web/App link";
+        breg = document.getElementById('book-reg');
+            breg.value = "Book Appointment";
+        }
+        else{
+            c = document.getElementById('creator');
+        c.style.background='rgb(214, 214, 214)';
+            c.style.color='black';
+            mess = 0;
+            bfocus();
+        }
+       }
 
-    //    function cfocus(){
-    //     if(mess == 0){
-    //         mess = 1;
-    //     c = document.getElementById('creator');
-    //     c.style.background='whitesmoke';
-    //         c.style.color='orangered';
+       function cfocus(){
+        if(mess == 0){
+            mess = 1;
+        c = document.getElementById('creator');
+        c.style.background='whitesmoke';
+            c.style.color='orangered';
 
-    //         yt = document.getElementById('Web/App');
-    //         yt.placeholder = "channel/account link";
+            yt = document.getElementById('Web/App');
+            yt.placeholder = "channel/account link";
 
-    //         breg = document.getElementById('book-reg');
-    //         breg.value = "Register";
-    //     }
-    //     else{
-    //         b = document.getElementById('brand');
-    //         b.style.color='black';
-    //         b.style.background='rgb(214, 214, 214)';
-    //         mess = 0;
-    //         cfocus();
-    //     }
-    //    }
+            breg = document.getElementById('book-reg');
+            breg.value = "Register";
+        }
+        else{
+            b = document.getElementById('brand');
+            b.style.color='black';
+            b.style.background='rgb(214, 214, 214)';
+            mess = 0;
+            cfocus();
+        }
+       }
+
+    //    form validation on home page 
     var flag=1;
     function validatefreedemo(event){
         var strings="";
-        console.log("hello world");
         var fname=document.freedemo.fname.value;
         var exp=new RegExp("^[a-z A-Z]+$");
         var x=exp.test(fname);
@@ -108,10 +109,12 @@
         }
 
         if(flag==1){
-            var s="Successfully Submitted.";
-            alert(s);
-            return;
+            strings="Successfully Submitted.";
+        }
+        else{
+            document.freedemo.fname.focus();
         }
         alert(strings);
         event.preventDefault();
+        return flag;
     }
