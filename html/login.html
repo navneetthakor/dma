@@ -16,20 +16,22 @@
 <body>
     <div class="logincenter" id="lc">
         <div class="login">
-            <span><a href="" onclick="history.back()">&#10539;</a></span>
+            <span><a href="" onclick="window.close()">&#10539;</a></span>
             <div class="intro">
                 <p>&#9735;</p>
                 <p id="welcome">Welcome!</p>
                 <p>Sign in to your account</p>
             </div>
             <div class="logindetails">
-                <div class="names"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" name="username" id="username">
-                </div>
-                <div class="pass">Password &nbsp;&nbsp;
-                    <input type="password" name="pswd" id="password">
-                </div>
-                <input type="button" value="Login &#8680;" onclick="checkuser()">
+                <form action="" name="userloginform" onsubmit="checkuser()">
+                    <div class="names"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="pass">Password &nbsp;&nbsp;
+                        <input type="password" name="pswd" id="password">
+                    </div>
+                    <input type="submit" value="Login &#8680;">
+                </form>
                 <div class="signuptext">
                     <p onclick="popsignuppage()">First time? Signup now!!!</p>
                 </div>
@@ -46,16 +48,18 @@
                 <p>Shake a firm hand with us</p>
             </div>
             <div class="logindetails">
-                <div class="names"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" name="username" id="signup_usrnme">
-                </div>
-                <div class="email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="pass">Password &nbsp;&nbsp;
-                    <input type="password" name="pswd" id="signup_pwd">
-                </div>
-                <input type="button" value="Create &#8680;" onclick="adduser()">
+                <form action="back.php" name="signupform" onsubmit="return signupentry(event)">
+                    <div class="names"> Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="username" id="signup_usrnme">
+                    </div>
+                    <div class="email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="pass">Password &nbsp;&nbsp;
+                        <input type="password" name="pswd" id="signup_pwd">
+                    </div>
+                    <input type="submit" value="Create &#8680;">
+                </form>
             </div>
         </div>
     </div>

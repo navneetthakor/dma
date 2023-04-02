@@ -109,12 +109,12 @@
         }
 
         if(flag==1){
-            strings="Successfully Submitted.";
+            strings+="Successfully Submitted.";
+            alert(strings);
         }
-        else{
-            document.freedemo.fname.focus();
+        if(flag==0){
+            alert(strings);
+            event.preventDefault();
         }
-        alert(strings);
-        event.preventDefault();
         return flag;
     }
