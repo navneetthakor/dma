@@ -1,0 +1,701 @@
+/* css reset  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: rokkitt;
+}
+
+/* css roots  */
+:root{
+    --1stcolor : rgba(255, 68, 0, 0.725);
+    --2ndcolor : #342EAD;
+    --secheigth1 : 100vh;
+    --secwidth : 100vw;
+    --gradient : linear-gradient(to right,var(--1stcolor),var(--2ndcolor));
+}
+
+/* body styling  */
+
+
+
+/* header styling  */
+header{
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(255, 253, 253, 0.825);
+    backdrop-filter: blur(5px);
+    /* border: 2px solid red; */
+}
+
+/* logo division of header  */
+#logo{
+    height: 7vh;
+    width: 14vw;
+    margin-left: 10vw;
+    margin-top: 1vh;
+    padding-left: 3vw;
+    /* border: 2px solid black; */
+
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+
+/* navigetion bar design of header  */
+#navigation{
+    height: inherit;
+    width: 40vw;
+    margin-left: 25vw;
+    /* border: 2px solid black; */
+    font-weight: bold;
+    z-index: 2;
+}
+
+#navigation nav{
+    margin-top: 2.8vh;
+}
+
+#navigation nav a{
+    text-decoration: none;
+    font-size: 2.8vh;
+    margin-left: 2vw;
+    color: black;
+    padding: 0.5vw;
+}
+
+#navigation nav a:hover{
+    cursor: pointer;
+    color: var(--2ndcolor);
+    transition: all 1s ease-out;
+    background-color: var(--1stcolor);
+    border-radius: 18px;
+}
+
+/* login botton design of header  */
+#hbutton{
+    height: inherit;
+    width: 10vw;
+    margin-left: 7vw;
+    margin-right: 5vw;
+}
+
+#hbutton input{
+    cursor: pointer;
+    height: 5.5vh;
+    width: 8vw;
+    margin: 2vh 3vh;
+    border: none;
+    border-radius: 13px;
+    font-size: 2.2vh;
+    background-color: var(--2ndcolor);
+    color: white;
+    font-weight: bold;
+}
+/* header styling end  */
+
+/* main tag styling  starts */
+
+/* section 1 styling  starts*/
+#sec1::before{
+    content: "";
+    background: url("/images/Untitled\ design\ \(5\).png") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+}
+
+#sec1{
+    display: flex;
+    flex-direction: column;
+    height: var(--secheigth1);
+    width: var(--secwidth);
+    position: relative;
+}
+
+#sec1 div:first-child{
+    margin-top: 20vh;
+}
+
+/* headline of section 1 */
+#s1d1{
+    margin-top: 5vh;
+    width: 33vw;
+}
+
+/* paragraph of section 1 */
+#s1d2{
+    width: 30vw;
+    font-size: 1.4rem;
+}
+
+
+/* section 1 buttons  */
+#s1d3 input{
+    margin-right: 5vw;
+    border-radius: 13px;
+    font-size: 1.1rem;
+    border-color: white;
+}
+
+/*btns*/
+.s1btns{
+    border: 10px solid red;
+    cursor: pointer;
+}
+
+#inf-btn{
+    border: 2px solid grey;
+    padding: 2vh 2vw;
+    color: white;
+    background-color: var(--1stcolor);
+    font-weight: bold;
+}
+#inf-btn:hover{
+    border: 3px solid grey;
+    color: var(--1stcolor);
+    background-color: white;
+}
+
+#brand-btn{
+    background-color: var(--2ndcolor);
+    border: 3px solid black;
+    font-weight: bold;
+    color: white;
+    width: 8vw;
+    border: 2px solid red;
+    padding: 2vh 2vw;
+}
+
+#brand-btn:hover{
+    border: 3px solid grey;
+    color: var(--2ndcolor);
+    background-color: white;
+}
+
+
+/* classes regarding section 1 */
+.s1margleft{
+    margin-left: 5vw;
+}
+
+.s1margtop{
+    margin-top: 5vh;
+}
+/* section 1 ends  */
+
+/* section 2 starts  */
+#sec2 {
+    padding-top: 14vh;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(233, 244, 245); */
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* main heading of the section 2 */
+#s2d1{
+    height: 20vh;
+    width: 50vw;
+    /* border: 2px solid grey; */
+    font-size: 10vh;
+    text-align: center;
+    padding-top: 2.5vh;
+   margin-bottom: 2vh;
+    font-weight: bolder;
+    color: black;
+}
+
+
+/* cads of section 2  */
+#s2d2{
+    height: 60vh;
+    width: 90vw;
+    /* border: 2px solid grey; */
+    display: flex;
+    padding-left: 4vw;
+
+}
+
+#s2d2 div{
+    text-align: center;
+    height: 80%;
+    width: 25%;
+    border: 1px solid grey;
+    margin-top: 6vh;
+    margin-left: 0vw;
+    background-color:var(--2ndcolor);
+    border-radius: 7px;
+    color: whitesmoke;
+    /* position: absolute; */
+}
+
+#s2d2 div:hover{
+   background-color: whitesmoke;
+   color: var(--2ndcolor);
+   box-shadow: -7px 7px 50px rgb(161, 112, 94),-7px 7px 20px #817ebc, 7px -7px 20px rgb(161, 112, 94), 7px -7px 50px #817ebc;
+   position: relative;
+   z-index: 5;
+}
+
+nk{
+    background-color: var(--1stcolor);
+    border-radius: 15px;
+    color: white;
+    /* text-shadow:5px 5px 4px orangered, 10px 2px 4px #342EAD; */
+}
+/* section 2 styling ends  */
+
+/* section 3 styling starts  */
+#sec3{
+    padding-top: 2vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+#sec3 > h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5vh;
+}
+
+#s3{
+    width: 85vw;
+    height: 65vh;
+    margin: auto;
+    background-color: lightgray;
+    background-color: var(--1stcolor);
+    color: white;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 7px 7px 40px black;
+}
+.textarea{
+    width: 45vw;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.wheel{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    font-weight: bold;
+    float: right;
+    background-color: grey;
+    color: black;
+    border: 2px solid white;
+}
+.im, .smm, .cm, .seo, .sac{
+    display: none;
+}
+.chakra{
+    width: 30vw;
+    padding-right: 10vw;
+    margin: auto;
+}
+#sac{
+    position: relative;
+    left: 3px;
+    top: 79px;
+    text-align: center;
+    z-index: 2;
+    transform: rotate(35deg);
+    width: 150px;
+    height: 80px;
+    /* padding-top: 20px; */
+    border-radius: 200px;
+    background-color: grey;
+    border: 2px solid white;
+}
+#sac:hover{
+    background-color: blue;
+    color: white;
+}
+#smm{
+    position: relative;
+    top: -143px;
+    left: 142px;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    transform: rotate(325deg);
+    z-index: 5;
+    border-radius: 200px;
+    background-color: grey;
+    border: 2px solid white;
+}
+#smm:hover{
+    background-color: red;
+    color: white;
+}
+#im{
+    position: relative;
+    top: -82px;
+    text-align: center;
+    border-radius: 200px;
+    left:110px;
+    width: 80px;
+    height: 140px;
+    /* transform: rotate(45deg); */
+    background-color: grey;
+    border: 2px solid white;
+    z-index: 1;
+}
+#im:hover{
+    background-color: purple;
+    color:white;
+}
+#cm{
+    position: relative;
+    top: -157px;
+    text-align: center;
+    width: 80px;
+    border-radius: 200px;
+    height: 140px;
+    /* padding-top: 20px; */
+    left:64px;
+    transform: rotate(38deg);
+    z-index: 3;
+    background-color: grey;
+    border: 2px solid white;
+}
+#cm:hover{
+    background-color: green;
+    color: white;
+}
+#seo{
+    position: relative;
+    top:-272px;
+    border-radius: 200px;
+    left:131px;
+    width: 140px;
+    height: 80px;
+    z-index: 5;
+    text-align: center;
+    transform: rotate(46deg);
+    background-color: grey;
+    border: 2px solid white;
+    
+}
+#seo:hover{
+    background-color: teal;
+    color: white;
+}
+#innerwheel{
+    position: relative;
+    top: -404px;
+    left: 124px;
+    z-index: 7;
+    width: 50px;
+    height:50px;
+    border-radius: 200px;
+    background-color: grey;
+    border: 2px solid white;
+}
+.temp h2{
+    font-size: 2.6rem;
+    margin: 2vh;
+    text-decoration: underline;
+}
+.temp p{
+    margin-bottom: 2vh;
+}
+.p{
+    margin-bottom: 2vh;
+}
+/* section 3 styling ends here  */
+
+/* section 4 styling starts */
+#sec4{
+    width: 80vw;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 18px;
+}
+#sec4 > h2{
+padding-top: 1vh;
+}
+.vision,.mission{
+    display: flex;
+}
+.vision{
+    margin-bottom: 10vh;
+}
+.vision img{
+    width: 500px;
+    height: 350px;
+    float: left;
+    margin-left: 50px;
+    border: 4px solid black;
+    border-radius: 15px;
+    /* box-shadow: 5px -5px 30px var(--1stcolor), 9px -9px 50px var(--2ndcolor); */
+    box-shadow: -7px -7px 20px black;
+}
+.mission img{
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 450px;
+    height: 325px;
+    float: right;
+    margin-right: 50px;
+    /* box-shadow: -5px 5px 30px var(--2ndcolor), -9px 9px 50px var(--1stcolor); */
+    box-shadow: 7px -7px 20px black;
+}
+#imgvis,#imgmiss{
+    width: 70vw;
+    margin: auto;
+    /* background-color: lightblue; */
+}
+#viscont,#misscont{
+    width: 60vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#viscont{
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+#misscont{
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+#sec4 h2{
+    color: black;
+    /* font-size: 3rem; */
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 7vh;
+
+}
+.pic1,.pic2{
+    height: 250px;
+    margin-right: 20px;
+    width: 200px;
+    /* background-color: lightblue; */
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;font-weight: bold;
+    margin-bottom: 200px;
+    text-align: center;
+}
+.photos a{
+    text-decoration: none;
+    color: black;
+}
+.photos span:hover{
+    transform: scale(2);
+    text-decoration: underline;
+}
+.faces{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+/* section 4 styling ends here */
+
+
+/* section 5 styling starts here  */
+#sec5 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+#s5txtcontainer{
+    height: 60vh;
+    width: 35vw;
+    padding-left: 3vw;
+}
+#s5txtcontainer h2{
+    text-decoration: underline;
+    padding: 2vh 0vw;
+}
+#s5txtcontainer p{
+    width: 80%;
+    padding: 2vh 0vw;
+    font-size: 1.5rem;
+}
+
+#s5container{
+    height: 60vh;
+    width: 60vw;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgba(255, 228, 196, 0.332);
+    box-shadow: 7px -7px 40px black;
+}
+
+#s5d1{
+    margin-top: 7vh;
+    width: 50%;
+    height: 75%;
+    overflow: hidden;
+}
+
+#s5d1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#s5d2{
+    margin-top: 6vh;
+    margin-left: 2vw;
+    height: 81%;
+    width: 40%;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.141);
+}
+
+#s5d2 input{
+    height: 3vh;
+    padding: 2vh 1vh;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+}
+
+#s5d2d3 input{
+    width: 91%;
+    
+}
+
+#s5d2 div{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+#s5d2 h3{
+    padding: 1vh;
+    text-align: center;
+}
+
+#s5d2 textarea{
+    height: 12vh;
+    width: 91%;
+    border: none;
+    /* text-align: right; */
+    padding: 1vh;
+}
+
+#s5d2 input[type=submit]{
+   /* margin-left: 4vw; */
+   text-align: center center;
+   height: 3vh;
+   width: 91%;
+   background-color: white;
+   color: var(--2ndcolor);
+   margin-left: -0.1vw;
+   font-size: 1.3rem;
+   padding-bottom: 3.8vh;
+   
+}
+
+#s5d2 input[type=submit]:hover{
+   color: white;
+   background-color: var(--2ndcolor);
+}
+/* section 5 ends  */
+
+/* footer styling starts here  */
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: #091337;
+}
+
+/* footer logo styling  */
+#flogo{
+    width: 12vw;
+    height: 10vh;
+    overflow: hidden;
+    padding-top: 4vh;
+    margin-left: 3vw;
+}
+
+#flogo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* styling of all remaining content of footer  */
+#fcontainer{
+    margin-top: 5vh;
+    display: flex;
+    /* color: whitesmoke; */
+}
+
+#fcontainer div{
+    margin-left: 5vw ;
+    color: #a1a5b1;
+}
+#fcontainer div h2{
+    color: whitesmoke;
+}
+
+/* nevigation section  */
+#fcd1{
+    display: flex;
+    flex-direction: column;
+}
+
+#fcd1 a{
+    text-decoration: none;
+    color: #a1a5b1;
+    font-size: 2.7vh;
+    padding-top: 1vh;
+}
+
+#fcd1 a:hover{
+    color: var(--1stcolor);
+}
+
+/* get in touch section  */
+#fcd2 h3{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2.7vh;
+}
+
+
+/* utility classes  */
+.hprimary{
+    font-size: 2.7rem;
+    /* text-shadow: 7px 7px 5px grey; */
+    font-weight: bolder;
+
+}
+
+.hsecondary{
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+.hternary{
+    font-size: 2rem;
+    color: var(--1stcolor);
+}

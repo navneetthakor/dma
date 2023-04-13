@@ -1,0 +1,114 @@
+body {
+    font-family: 'Rokkitt', serif;
+}
+
+.sec21, .sec22{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 20vh;
+}
+
+.semimg, .cmimg {
+    width: 50vw;
+}
+.semimg{
+    /* margin-right: 20px; */
+    margin-left: -10vw;
+}
+
+.seminfo, .cminfo {
+    width: 45vw;
+    position: relative;
+    top: -270px;
+}
+
+.cminfo{
+    margin-left: 6vw;
+}
+
+.cmimg #contimg, img{
+    width: 30vw;   
+    /* height: 40vh; */
+    border: 6px solid black;
+    z-index: 3;
+    border-radius: 20px;
+    position: relative;
+    top: -560px;
+    left: 122px;
+}
+
+/* .semimg img {
+    border: 6px solid black;
+    z-index: 3;
+    border-radius: 20px;
+    position: relative;
+    top: -560px;
+    left: 122px;
+} */
+
+.sem, .cm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sem{
+    background-color: whitesmoke;
+}
+.cm{
+    /* background-color: whitesmoke; */
+    margin-top: 8vh;
+}
+
+.blueback {
+    width: 300px;
+    height: 430px;
+    background-color: rgb(32, 32, 238);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 20px;
+
+    position: relative;
+    top: 10px;
+    left: 123px;
+    z-index: 2;
+}
+
+.cremeback {
+    width: 350px;
+    height: 200px;
+    background-color: rgb(255, 236, 220);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 7px;
+    position: relative;
+    top: -420px;
+    left: 280px;
+    z-index: 1;
+}
+
+.seminfo h2, .cminfo h2 {
+    font-size: 2.3rem;
+}
+
+.seminfo p, .cminfo p {
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.seminfo li, .cminfo li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: grey;
+    list-style-type: square;
+    padding-bottom: 7px;
+}
+
+.design{
+    color: orange;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.rot{
+    position: absolute;
+    transform: rotate(80deg);
+}

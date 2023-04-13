@@ -1,0 +1,109 @@
+body {
+    font-size: 1.3rem;
+    font-family: 'Rokkitt', serif;
+}
+
+.logincenter{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 5px 5px 80px grey;
+}
+
+.login span{
+    display: flex;
+    justify-content: right;
+    margin-left: 270px;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.logindetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.names,
+.pass,
+.check,
+.email {
+    display: flex;
+    flex-direction: rows;
+}
+
+.logindetails input[type=submit] {
+    background-color: rgb(23, 81, 255);
+    color: white;
+    border-radius: 6px;
+    padding: 7px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-color: transparent;
+    margin-left: 100px;
+}
+
+.logindetails input[type=submit]:hover{
+    transform: scale(1.1);
+}
+
+.logindetails a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+.intro {
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro p:first-child {
+    color: rgb(23, 81, 255);
+}
+
+.intro p:last-child {
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+#welcome {
+    margin-top: -20px;
+}
+
+.signuptext p {
+    font-size: 16px;
+}
+
+.signuptext p:hover {
+    text-decoration: underline;
+    color: rgb(23, 81, 255);
+    cursor: pointer;
+}
+
+.pass {
+    margin-top: 10px;
+}
+
+.email {
+    margin-top: 10px;
+}
+
+span a {
+    text-decoration: none;
+}

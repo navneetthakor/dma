@@ -1,0 +1,135 @@
+/* section 1 styling  */
+#sec1{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 12vh;
+    display: flex;
+}
+
+#sec1 > div{
+    width: 50%;
+    height: 100%;
+}
+
+/* image division styling  */
+#s1div2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} 
+
+/* text division styling  */
+#s1div1 h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10vh;
+}
+
+/* form division styling  */
+#s1form{
+    width: 110%;
+    height: 65%;
+    border-radius: 8px;
+    background-color: rgb(239, 235, 235);
+    box-shadow: 7px 7px 40px black;
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+
+/* image inside form division  */
+#s5d1{
+    margin-top: 5vh;
+    margin-left: 1vw;
+    width: 53%;
+    height: 80%;
+    overflow: hidden;
+}
+
+#s5d1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* internal form division    */
+#s5d2{
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+    height: 88%;
+    width: 40%;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.141);
+}
+
+/* internal form header  */
+#s5d2ftbtn{
+    font-weight: bold;
+    font-size: 30px;
+    /* display: flex; */
+    padding-left: -1vw;
+}
+
+/* #s5d2ftbtn input{ */
+    /* padding: 2vh ;
+    width: 50%;
+    border: none;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    /* background-color: rgb(214, 214, 214); */
+    /* cursor: pointer; */
+/* } */
+
+/* #s5d2ftbtn input:first-child{
+    border-top-left-radius: 8px;
+    border-right:1px solid grey;
+} */
+
+/* #s5d2ftbtn input:nth-child(2){
+    border-top-right-radius: 8px;
+} */
+
+
+/* internal form body  */
+#s5d2 form input{
+    height: 3vh;
+    padding: 2vh 1vh;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+}
+
+#s5d2d3 input{
+    width: 91%;
+}
+
+#s5d2 form div{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+
+#s5d2 textarea{
+    height: 12vh;
+    width: 91%;
+    border: none;
+    padding: 1vh;
+}
+
+#s5d2 input[type=submit]{
+   text-align: center center;
+   height: 3vh;
+   width: 91%;
+   background-color: white;
+   color: var(--2ndcolor);
+   margin-left: -0.1vw;
+   font-size: 1.3rem;
+   padding-bottom: 3.8vh;
+   font-weight: bolder;  
+}
+
+#s5d2 input[type=submit]:hover{
+   color: white;
+   background-color: var(--2ndcolor);
+}
