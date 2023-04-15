@@ -9,7 +9,7 @@
     <!-- stylsheets  -->
     <link rel="stylesheet" href="/dma/css/headerfooter.css">
     <link rel="stylesheet" href="/dma/css/index.css">
-    <link rel="stylesheet" media="screen and (max-width : 1590px)" href="/dma/css/mobile.css">
+    <link rel="stylesheet" media="screen  and (max-width : 1190px)" href="/dma/css/mobile.css">
     <link rel="stylesheet" media="screen and (max-width : 700px)" href="/dma/css/mobile2.css">
 
     <!-- other links like fonts etc -->
@@ -29,7 +29,7 @@
     <header>
         <!-- logo division  -->
         <div id="logo">
-            <img src="/dma/images/cilogo.png" alt="CI MOGULS">
+            <img src="/images/cilogo.png" alt="CI MOGULS">
         </div>
 
         <!-- navigastion division  -->
