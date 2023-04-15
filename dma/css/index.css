@@ -16,7 +16,9 @@
 }
 
 /* body styling  */
-
+body{
+    overflow-x: hidden;
+}
 
 
 /* header styling  */
@@ -49,7 +51,10 @@ header{
 }
 
 /* navigetion bar design of header  */
-#navigation{
+
+
+nav{
+    margin-top: 2.8vh;
     height: inherit;
     width: 40vw;
     margin-left: 25vw;
@@ -58,11 +63,7 @@ header{
     z-index: 2;
 }
 
-#navigation nav{
-    margin-top: 2.8vh;
-}
-
-#navigation nav a{
+ nav a{
     text-decoration: none;
     font-size: 2.8vh;
     margin-left: 2vw;
@@ -70,7 +71,7 @@ header{
     padding: 0.5vw;
 }
 
-#navigation nav a:hover{
+ nav a:hover{
     cursor: pointer;
     color: var(--2ndcolor);
     transition: all 1s ease-out;
@@ -618,6 +619,10 @@ padding-top: 1vh;
 #s5d2 input[type=submit]:hover{
    color: white;
    background-color: var(--2ndcolor);
+}
+
+#s52container{
+    display: none;
 }
 /* section 5 ends  */
 

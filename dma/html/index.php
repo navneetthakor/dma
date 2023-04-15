@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylsheets  -->
     <link rel="stylesheet" href="/dma/css/headerfooter.css">
     <link rel="stylesheet" href="/dma/css/index.css">
+    <link rel="stylesheet" media="screen and (max-width : 1590px)" href="/dma/css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width : 700px)" href="/dma/css/mobile2.css">
+
+    <!-- other links like fonts etc -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
@@ -27,14 +33,14 @@
         </div>
 
         <!-- navigastion division  -->
-        <div id="navigation">
+        <!-- <div id="navigation"> -->
             <nav>
             <a href="/dma/html/index.php" class="navbar">Home</a>
             <a href="/dma/html/services.php" class="navbar">Services</a>
             <a href="/dma/html/plans.php" class="navbar">Plans</a>
             <a href="/dma/html/contact.php" class="navbar">Contact Us</a>
             </nav>
-        </div>
+        <!-- </div> -->
         <div id="hbutton">
             <input type="button" value="Login/Sign up" id="contactus" onclick="poplogin()">
         </div>
@@ -63,7 +69,7 @@
         <!-- section 2 starts here -->
         <section id="sec2">
             <div id="s2d1">
-                <p>Are you facing <br> the same <nk>challenges?</nk>
+                <p>Are you facing the same <nk>challenges?</nk>
                 </p>
             </div>
             <div id="s2d2">
@@ -145,7 +151,7 @@
                 </div>
             </div>
             <div class="faces">
-                <h2 class="hsecondary">Faces Behind CI Moguls</h2>
+                <h2 class="hprimary">Faces Behind CI Moguls</h2>
                 <div class="photos">
                     <div class="pic1"><img src="/dma/images/DSTAPES.png" height="200px" width="200px" alt=""><span> <a href="https://www.linkedin.com/in/navneetkumar-ceo/" target="_blank">Navneet Thakor (Founder & CEO)</a></span></div>
                     <div class="pic2"><img src="/dma/images/DSTAPES.png" height="200px" width="200px" alt=""><span> <a href="www.linkedin.com" target="_blank">Rohanshu Banodha (Cofounder & COO)</a></span></div>
@@ -157,7 +163,7 @@
         <!-- section 5 startes here  -->
         <section id="sec5">
             <div id="s5txtcontainer">
-                <h2 class="hsecondary">Talk with our experts.</h2>
+                <h2 class="hsecondary" id="talkexp">Talk with our experts.</h2>
                 <p>Book your free demo meeeting by submiting the given form. Our experts will connect with you and try to solve your problem in best possible manner.</p>
             </div>
             <div id="s5container">
@@ -193,6 +199,11 @@
     
                     </form>
                 </div>
+
+            </div>
+            <!-- for media query  -->
+            <div id="s52container">
+                    <input href="/dma/html/signup.php" type="button" id="ctbtn" value="contact us &rarr;">
             </div>
         </section>
     </main>
