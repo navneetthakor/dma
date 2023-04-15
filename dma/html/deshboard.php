@@ -223,6 +223,7 @@
                                 <img src="../images/ldinlogo.png" alt="">
                             </div>
                             <div class="logoname">LinkedIn Ads Manager</div>
+                            
                         </div>
                     </a>
                 </div>
