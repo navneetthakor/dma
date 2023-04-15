@@ -1,11 +1,13 @@
 body {
     font-family: 'Rokkitt', serif;
+    overflow-x: hidden;
 }
 
 .sec21, .sec22{
     width: 100vw;
     height: 60vh;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
+    padding-top: 13vh;
 }
 
 .semimg, .cmimg {
