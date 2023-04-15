@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/plnasfordesb.css"> 
+    <!-- link again if not run -->
+    
     <title>Deshboard | CI Moguls</title>
     <style>
         * {
@@ -85,7 +88,7 @@
             /* background-color: whitesmoke; */
         }
 
-        #rcontainer {
+        #rcontainer1 {
             width: 80%;
             height: 80%;
             margin-top: 7%;
@@ -93,68 +96,6 @@
             /* border: 2px solid red; */
 
         }
-
-        /* analytics part in right container 
-        #rcontainer > div:first-child::before{
-            content: "";
-            background: url('../images/dashboard-modern.png') no-repeat center center/cover;
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0.3;
-        }
-        #ranlytic {
-            height: 48%;
-            width: 100%;
-            color: #070176;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 2vh;
-            box-shadow: 7px 7px 20px black;
-            position: relative;
-        }
-
-        #ranlytic img{
-            height: 20%;
-            width: 20%;
-            margin-top: 5%;
-            
-        }
-        
-        remaining part of the container 
-        #rcont2 {
-            margin-top: 2%;
-            height: 48%;
-            width: 100%;
-            border-radius: 8px;
-            display: flex;
-        }
-
-        #rcont2 div {
-            text-align: center;
-            font-size: 3vh;
-            height: 100%;
-            width: 48%;
-            background-color: whitesmoke;
-            color: black;
-            border-radius: 8px;
-            box-shadow: 7px 7px 20px black;
-        }
-
-        #rcont2 div:first-child {
-            margin-right: 3%;
-        }
-
-        utility classes
-        .metadata{
-            color: #070176;
-            font-weight: 550;
-            font-size: 2.5vh;
-            margin-top: 3%;
-        } */
 
         /* right div heading  */
         #rheddesh {
@@ -165,13 +106,13 @@
         }
 
         /* all three tabs in right gg,fb,ldin  */
-        #rcont2 {
+        #rincont1 {
             width: 100%;
             height: 80%;
             margin-top: 5%;
         }
 
-        #rcont2 a>div {
+        #rincont1 a>div {
             width: 100%;
             height: 20%;
             margin-top: 5%;
@@ -181,7 +122,7 @@
             display: flex;
         }
 
-        #rcont2 a{
+        #rincont1 a{
             text-decoration: none;
         }
 
@@ -211,6 +152,12 @@
             padding-left: 5%;
             color: #070176;
         }
+
+
+        /* plans container styling */
+       .disn{
+        display: none;
+       }
     </style>
 </head>
 
@@ -228,7 +175,7 @@
             </div>
         </div>
         <div id="right">
-            <div id="rcontainer">
+            <div id="rcontainer1" >
                 <!-- <div id="ranlytic">
                     <h2>Analytics</h2>
                     <img src="../images/ga42.png" alt="Google analytics">
@@ -236,11 +183,11 @@
                         Click here to get the details about how users are interecting with your website.
                     </div>
                 </div>
-                <div id="rcont2">
-                    <div id="rcont2d1">
+                <div id="rincont1">
+                    <div id="rincont1d1">
                         Ad spent
                     </div>
-                    <div id="rcont2d2">
+                    <div id="rincont1d2">
                         Influencers
                     </div> -->
 
@@ -251,8 +198,8 @@
                 </div>
 
                 <!-- tabs to navigate analytics  -->
-                <div id="rcont2">
-                    <a href="">
+                <div id="rincont1">
+                    <a href="https://analytics.google.com/analytics/web/#/p327629763/reports/intelligenthome" target="_blank">
                         <div id="google">
                             <div class="imgdiv">
                                 <img src="../images/ga42.png" alt="">
@@ -261,7 +208,7 @@
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=328536531082721&nav_entry_point=lep_233" target="_blank">
                         <div id="fb">
                             <div class="imgdiv">
                                 <img src="../images/fblogo.png" alt="">
@@ -270,7 +217,7 @@
                         </div>
                     </a>
 
-                    <a href="">
+                    <a href="https://www.linkedin.com/campaignmanager/accounts/510245872/campaign-groups?campaignGroupIds=%5B%5D" target="_blank">
                         <div id="ldin">
                             <div class="imgdiv">
                                 <img src="../images/ldinlogo.png" alt="">
@@ -281,6 +228,59 @@
                 </div>
             </div>
 
+            <!-- plans right container -->
+            <div id="rcontainer2" class="disn">
+                    <div id="s1div1">
+                        <h1>Plans</h1>
+                    </div>
+        
+                    <!-- boxes of plans  -->
+                    <div id="s1div3">
+                        <div id="s1d3d1">
+                            <div id="s1d3d1d1" class="s1cardh ">
+                                Silver
+                            </div>
+                            <div id="s1d3d1d2" class="s1cardb">
+                                <h3>&#8377;20000/mo</h3>
+                                <h4>Search engine marketing</h4>
+                                <h4>Social media marketing</h4>
+                                <h4>Social media Optimization</h4>
+        
+                                <input type="button" value="Get Started">
+        
+                            </div>
+                        </div>
+        
+                        <div id="s1d3d2">
+                            <div id="s1d3d2d1" class="s1cardh ">
+                                Golden
+                            </div>
+                            <div id="s1d3d2d2" class="s1cardb">
+                                <h3>&#8377;35000/mo</h3>
+                                <h4>SEM/SEO</h4>
+                                <h4>SMM/SMO</h4>
+                                <h4>Influencer Marketing</h4>
+        
+                                <input type="button" value="Get Started">
+                            </div>
+                        </div>
+        
+                        <div id="s1d3d3">
+                            <div id="s1d3d3d1" class="s1cardh ">
+                                Platinum
+                            </div>
+                            <div id="s1d3d3d2" class="s1cardb">
+                                <h3>&#8377;70000/mo</h3>
+                                <h4>SEM/SEO</h4>
+                                <h4>SMM/SMO</h4>
+                                <h4>IM/Content marketing </h4>
+        
+                                <input type="button" value="Get Started">
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
         </div>
         </div>
     </section>
@@ -298,8 +298,10 @@
             lall = document.getElementsByClassName('lbtn')[1].classList.add('corang');
             lall = document.getElementsByClassName('lbtn')[1].classList.remove('corang1');
 
-            var rcontainer = document.getElementById('rcontainer');
-            rcontainer.style.display = "none";
+            var rcontainer1 = document.getElementById('rcontainer1');
+            var rcontainer2 = document.getElementById('rcontainer2');
+            rcontainer1.classList.add('disn')
+            rcontainer2.classList.remove('disn')
 
             //    window.open("/html/plans.html","_blank");
         }
@@ -316,8 +318,10 @@
             lall = document.getElementsByClassName('lbtn')[0].classList.add('corang');
             lall = document.getElementsByClassName('lbtn')[0].classList.remove('corang1');
 
-            var rcontainer = document.getElementById('rcontainer');
-            rcontainer.style.display = "block";
+            var rcontainer1 = document.getElementById('rcontainer1');
+            var rcontainer2 = document.getElementById('rcontainer2');
+            rcontainer1.classList.remove('disn')
+            rcontainer2.classList.add('disn')
         }
 
         function logout() {
