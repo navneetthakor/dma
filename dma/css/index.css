@@ -229,6 +229,7 @@ nav{
 }
 
 #s2d2 div{
+    padding-top: 10%;
     text-align: center;
     height: 80%;
     width: 25%;
@@ -238,12 +239,12 @@ nav{
     background-color:var(--2ndcolor);
     border-radius: 7px;
     color: whitesmoke;
-    /* position: absolute; */
+    font-size: larger;
 }
 
 #s2d2 div:hover{
    background-color: whitesmoke;
-   color: var(--2ndcolor);
+   color: var(--1stcolor);
    box-shadow: -7px 7px 50px rgb(161, 112, 94),-7px 7px 20px #817ebc, 7px -7px 20px rgb(161, 112, 94), 7px -7px 50px #817ebc;
    position: relative;
    z-index: 5;
