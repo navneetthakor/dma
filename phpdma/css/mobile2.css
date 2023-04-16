@@ -1,0 +1,78 @@
+/* header is ok  */
+
+/* section 1  */
+#sec1{
+    height: 90vh;
+}
+
+/* section 2 */
+#s2d2{
+    margin-top: 15%;
+ }
+
+ /* section 3 */
+#sec3{
+    display: none;
+}
+
+/* section 4 */
+.photos{
+    display:flex;
+    flex-direction: column;
+}
+.photos > div{
+    height: 50%;
+    width: 50%;
+}
+
+.pic1,.pic2{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* section 5 */
+#sec5{
+    height: 40vh;
+}
+
+#talkexp{
+    font-size: 2rem;
+}
+
+#s5txtcontainer p{
+    display: none;
+}
+
+#s5container{
+    display: none;
+}
+#s52container{
+    margin-top: 10%;
+    height: 40%;
+    display: block;
+    /* border: 3px solid red; */
+    text-align: center;
+}
+
+#ctbtn{
+    text-align: center;
+    height: 5vh;
+    width: 30%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 2px solid grey;
+    background-color: rgb(231, 64, 3);
+    border-radius: 8px;
+    color:white;
+
+}
+/* footer  */
+#fcd3{
+    display: none;
+}
+
+/* utility classes  */
+.hprimary{
+    font-size: 1.2rem;
+}
