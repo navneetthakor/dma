@@ -73,7 +73,7 @@ nav a{
 
 /* paragraph of section 1 */
 #s1d2{
-    padding-top: 5vh;
+    padding-top: 0 !important;
     text-align: justify;
 }
 #s1d2 p{

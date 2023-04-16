@@ -74,16 +74,16 @@
             </div>
             <div id="s2d2">
                 <div id="d2d1">
-                    <h3>nor getting enough leads</h3>
+                    <h3>Not Getting Enough Direct Business?</h3>
                 </div>
                 <div id="d2d2">
-                    <h3>nor getting enough leads</h3>
+                    <h3>Do You Want More Sale From F&B?</h3>
                 </div>
                 <div id="d2d3">
-                    <h3>nor getting enough leads</h3>
+                    <h3>WalkIn Customers Are Very Less??</h3>
                 </div>
                 <div id="d2d4">
-                    <h3>nor getting enough leads</h3>
+                    <h3>Overall Revenue Is Less?</h3>
                 </div>
             </div>
         </section>
