@@ -1,0 +1,153 @@
+/* css reset  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: rokkitt;
+}
+
+/* css roots  */
+:root{
+    --1stcolor : rgba(255, 68, 0, 0.725);
+    --2ndcolor : #342EAD;
+    --secheigth1 : 100vh;
+    --secwidth : 100vw;
+    --gradient : linear-gradient(to right,var(--1stcolor),var(--2ndcolor));
+}
+
+/* body styling  */
+
+/* main tag styling  starts */
+
+/* section 1 styling starts here  */
+#sec1{
+    height: var(--secheigth1);
+    width: var(--secwidth);
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* content below heading  */
+#s1div2{
+    margin-top: 2vh;
+    height: 15vh;
+    width: 50vw;
+    font-size: 3vh;
+    text-align: center;
+}
+
+/* cards styling */
+#s1div3{
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#s1div3 input{
+    cursor: pointer;
+}
+
+#s1div3 > div{
+    height: 100%;
+    width: 30%;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px 40px black;
+}
+
+/* card heading styling  */
+.s1cardh{ 
+    height: 20%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 4vh;
+    border-bottom: 2px solid grey;
+    background-color: rgba(128, 128, 128, 0.154);
+} 
+
+/* card body styling  */
+.s1cardb{ 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.s1cardb h3{ 
+    font-size: 5vh;
+    padding: 4vh;
+
+}
+
+.s1cardb h4{ 
+    font-size: 3vh;
+    font-weight: 400;
+} 
+
+.s1cardb input{ 
+    height: 15%;
+    width: 80%;
+   margin-top: 10%;
+   border-radius: 8px;
+   border-color: blue;
+   font-size: 3vh;
+   background-color: white;
+} 
+
+
+/* specific card styling  */
+#s1d3d2d2 input{
+    background-color: blue;
+    color: white;
+}
+
+#s1d3d3d2 input, #s1d3d3d1{
+    background-color: blue;
+    color: white;
+}
+
+
+/* section 2 styling starts here  */
+#sec2{
+    height: var(--secheigth1);
+    width: var(--secwidth);
+}
+
+.planheading{
+    margin-bottom: 7vh;
+}
+
+.cmp_plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+td, th{
+    width: 200px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 10px;
+}
+
+.names{
+    font-weight: bold;
+}
+
+.note{
+    color: grey;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+/* section 2 styling ends here */
