@@ -1,3 +1,15 @@
+<?php
+    $price_amount = 0;
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $price_amount = $_POST["price"];
+        header("location: login.php");
+        exit;
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +24,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rokkitt:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #s1div3 input:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -52,6 +70,7 @@
             </div>
 
             <!-- boxes of plans  -->
+            <form action="/dma/html/plans.php" method="post">
             <div id="s1div3">
                 <div id="s1d3d1">
                     <div id="s1d3d1d1" class="s1cardh ">
@@ -63,7 +82,7 @@
                         <h4>Social media marketing</h4>
                         <h4>Social media Optimization</h4>
 
-                        <input type="button" value="Get Started">
+                        <input type="submit" value="Get Started" name="price">
 
                     </div>
                 </div>
@@ -78,7 +97,7 @@
                         <h4>SMM/SMO</h4>
                         <h4>Influencer Marketing</h4>
 
-                        <input type="button" value="Get Started">
+                        <input type="submit" value="Get Started" name="price">
                     </div>
                 </div>
 
@@ -92,10 +111,11 @@
                         <h4>SMM/SMO</h4>
                         <h4>IM/Content marketing </h4>
 
-                        <input type="button" value="Get Started">
+                        <input type="submit" value="Get Started" name="price">
                     </div>
                 </div>
             </div>
+        </form>
         </section>
 
         <!-- section 2 starts here  -->

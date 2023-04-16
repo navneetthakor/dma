@@ -46,6 +46,10 @@
     flex-direction: row;
 }
 
+#s1div3 input{
+    cursor: pointer;
+}
+
 #s1div3 > div{
     height: 100%;
     width: 30%;

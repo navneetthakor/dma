@@ -1,22 +1,27 @@
 <?php
+    require 'dbconnect.php';
     $alert=false;
     $error=false;
     if($_SERVER["REQUEST_METHOD"]=="POST"){
-        require 'dbconnect.php';
-        $client = $_POST["client"];
         $fname = $_POST["fname"];
         $lname = $_POST["lname"];
         $email = $_POST["email"];
         $pnumber = $_POST["pnumber"];
         $link = $_POST["Web/App"];
         $msg = $_POST["msg"];
-        $srno=1;
+        $client;
+        $chkbrnd = 'www.';
+        if(strpos($link,$chkbrnd) !==false){
+            $client="brand";
+        }
+        else{
+            $client="creator";
+        }
 
-        $sql="INSERT INTO `contact_form` (`srno`, `client_type`, `fname`, `lname`, `pno`, `email`, `link`, `msg`, `date`) VALUES ('$srno', '$client', '$fname', '$lname', '$pnumber ', '$email', '$link', '$msg', current_timestamp()";
+        $sql="INSERT INTO `contact_form` (`client_type`, `fname`, `lname`, `pno`, `email`, `link`, `msg`, `date`) VALUES ('$client', '$fname', '$lname', '$pnumber ', '$email', '$link', '$msg', current_timestamp())";
         
         $result = mysqli_query($conn,$sql);
         if($result){
-            $srno=$srno+1;
             $alert=true;
         }
         else{

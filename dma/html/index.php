@@ -1,3 +1,7 @@
+<?php
+    include 'dbconnect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +26,50 @@
     <!-- google icons style sheet  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
+    <style>
+        .number {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        animation-name: count-up;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+      }
+      @keyframes count-up {
+        from {
+          opacity: 0.1;
+          /* transform: translateY(-100%); */
+        }
+        to {
+          opacity: 1;
+          /* transform: translateY(10%); */
+        }
+      }
+      .outercontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        height: 300px;
+        width: 360px;
+        margin: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        border-radius: 30px;
+        background-color: whitesmoke;
+    }
+    #number-container{
+        display: flex;
+        border-radius: 30px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 260px;
+        background-color: antiquewhite;
+        color: blue;
+      }
+    </style>
 </head>
 
 <body>
@@ -206,6 +254,36 @@
                     <input href="/dma/html/signup.php" type="button" id="ctbtn" value="contact us &rarr;">
             </div>
         </section>
+         <!--section 6 starts here-->
+    <section id="sec6">
+        <div class="outercontainer">
+            <div id="number-container">
+                <h2>Our happy clients : <span class="number" id="number-display">0</span></h2>
+            </div>
+        </div>
+
+        <?php
+            $sql = "SELECT * from `users`";
+            $result = mysqli_query($conn,$sql);
+            $numusers = mysqli_num_rows($result);
+        ?>
+
+        <script>
+            const targetNumber = <?php echo $numusers;?>;
+            const numberDisplay = document.getElementById("number-display");
+            let currentNumber = 0;
+      
+            function updateNumber() {
+                if (currentNumber <= targetNumber) {
+                numberDisplay.textContent = currentNumber;
+                currentNumber++;
+                setTimeout(updateNumber, 200);
+                }
+            }
+      
+            updateNumber();
+        </script>
+    </section>
     </main>
 
     <!-- footer starts here  -->

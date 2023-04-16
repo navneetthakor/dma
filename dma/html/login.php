@@ -38,6 +38,11 @@
 </head>
 
 <body>
+<?php
+        if($error){
+            echo '<script>alert("Not exist");</script>';
+        }
+    ?>
     <div class="logincenter" id="lc">
         <div class="login">
             <span><a href="/dma/html/index.php">&#10539;</a></span>
